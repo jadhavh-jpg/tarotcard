@@ -367,7 +367,8 @@ a{text-decoration:none}
 
 <!-- COUNTDOWN -->
 <script>
-const eventDate = new Date("Jan 1, 2026 20:00:00").getTime();
+const eventDate = new Date("2026-01-01T20:00:00+05:30").getTime();
+
 setInterval(() => {
   const now = new Date().getTime();
   const diff = eventDate - now;
@@ -397,6 +398,7 @@ fetch(url)
 
 </body>
 </html>
+
 
 
 
