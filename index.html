@@ -238,7 +238,29 @@ a{text-decoration:none}
       where ancient wisdom meets divine alignment. ✨
     </p>
   </div>
+<!-- VISITOR COUNTER -->
+<div class="section">
+  <h2>Community Interest</h2>
+  <p>So many seekers have already shown interest 🌿</p>
 
+  <div style="
+    margin:25px auto;
+    max-width:320px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,215,0,0.4);
+    border-radius:16px;
+    padding:25px;
+    text-align:center;
+  ">
+    <div style="font-size:38px;font-weight:800;color:#ffd700;">
+      <span id="visitCount">0</span>+
+    </div>
+    <div style="font-size:15px;color:#ccc;margin-top:6px;">
+      People Visited This Page
+    </div>
+  </div>
+</div>
++
   <!-- FOUNDERS -->
   <div class="section">
     <h2>Meet the Founders</h2>
@@ -355,10 +377,18 @@ setInterval(() => {
   document.getElementById("minutes").innerHTML = Math.floor((diff%(1000*60*60))/(1000*60));
   document.getElementById("seconds").innerHTML = Math.floor((diff%(1000*60))/1000);
 },1000);
+<script>
+fetch('https://api.countapi.xyz/hit/kasturidivine/tarotwebinar')
+.then(response => response.json())
+.then(data => {
+  document.getElementById('visitCount').innerText = data.value;
+});
 </script>
+
 
 </body>
 </html>
+
 
 
 
