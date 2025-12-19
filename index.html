@@ -405,9 +405,28 @@ a{text-decoration:none}
 });
 </script>
 
+<script>
+(function () {
+  const baseCount = 1115;
+  const storageKey = "kasturi_divine_visitor_count";
+
+  let localCount = localStorage.getItem(storageKey);
+
+  if (!localCount) {
+    localCount = baseCount;
+    localStorage.setItem(storageKey, localCount);
+  } else {
+    localCount = parseInt(localCount) + 1;
+    localStorage.setItem(storageKey, localCount);
+  }
+
+  document.getElementById("visitCount").innerText = localCount;
+})();
+</script>
 
 </body>
 </html>
+
 
 
 
