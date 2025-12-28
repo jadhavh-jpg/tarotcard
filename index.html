@@ -47,22 +47,6 @@ src="https://www.facebook.com/tr?id=4520556331594808&ev=PageView&noscript=1"
   display: block;
 }
 
-/* overlay */
-.video-overlay{
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.65)
-  );
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  color: #fff;
-}
 
 .video-overlay h1{
   font-size: 36px;
@@ -101,6 +85,21 @@ src="https://www.facebook.com/tr?id=4520556331594808&ev=PageView&noscript=1"
     font-size: 15px;
   }
 }
+.video-cta{
+  text-align:center;
+  margin-top:15px;
+}
+
+.register-btn{
+  padding:10px 22px;
+  font-size:14px;
+  border-radius:30px;
+  background:linear-gradient(135deg,#ffcc70,#ff8c00);
+  color:#000;
+  font-weight:600;
+  text-decoration:none;
+}
+  
 </style>
 
 <style>
@@ -309,9 +308,13 @@ a{text-decoration:none}
 <section class="video-hero">
   <video autoplay muted loop playsinline>
     <source src="webinar-video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
+
+  <div class="video-cta">
+    <a href="#register" class="register-btn">Register Now</a>
+  </div>
 </section>
+
 
 
   <div class="video-overlay">
@@ -542,6 +545,7 @@ a{text-decoration:none}
 
 </body>
 </html>
+
 
 
 
