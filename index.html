@@ -30,6 +30,78 @@ src="https://www.facebook.com/tr?id=4520556331594808&ev=PageView&noscript=1"
 <meta charset="UTF-8">
 <title>3 Days Tarot Card Reading Webinar | Kasturi Divine</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.video-hero{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+
+.video-hero video{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* overlay */
+.video-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.65)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.video-overlay h1{
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.video-overlay p{
+  font-size: 18px;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+/* button */
+.register-btn{
+  background: linear-gradient(135deg,#ffcc70,#ff8c00);
+  color: #000;
+  padding: 14px 34px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover{
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(255,140,0,0.6);
+}
+
+/* mobile friendly */
+@media(max-width:768px){
+  .video-overlay h1{
+    font-size: 24px;
+  }
+  .video-overlay p{
+    font-size: 15px;
+  }
+}
+</style>
 
 <style>
 *{box-sizing:border-box}
@@ -234,6 +306,22 @@ a{text-decoration:none}
       <div class="time-box"><span id="minutes">00</span>Minutes</div>
       <div class="time-box"><span id="seconds">00</span>Seconds</div>
     </div>
+<section class="video-hero">
+  <video autoplay muted loop playsinline>
+    <source src="tarot-webinar.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="video-overlay">
+    <h1>3 Day Tarot Card Reading Webinar</h1>
+    <p>Learn Tarot Reading with Practical Guidance</p>
+
+    <a href="https://rzp.io/rzp/KnvxkDe6" class="register-btn">
+  Register Now
+</a>
+
+  </div>
+</section>
 
     <div class="cta">
       <a href="https://rzp.io/rzp/KnvxkDe6" target="_blank">
@@ -452,6 +540,7 @@ a{text-decoration:none}
 
 </body>
 </html>
+
 
 
 
